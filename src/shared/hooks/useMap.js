@@ -185,6 +185,7 @@ const useMap = () => {
     watchErrorCallback,
     createContentMarker,
     setMapCenterByUserMarker,
+    map,
   };
 };
 

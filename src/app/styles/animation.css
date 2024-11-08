@@ -1,32 +1,34 @@
+.play-move,
 .play-enter-active,
 .play-leave-active {
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .play-enter-from,
 .play-leave-to {
-  opacity: 0;
-  transform: translateY(-10%);
+  transform: translateY(50%);
 }
 
 .play-leave-active {
   position: absolute;
+  opacity: 0;
 }
 
-.fade-move,
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.5s ease;
 }
 
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  transform: translateY(-20px);
   opacity: 0;
 }
 
 .fade-enter-to {
   transform: translateY(0);
   opacity: 1;
+}
+.fade-leave-active {
+  position: absolute;
 }
 
 .slide-enter-active,
@@ -54,6 +56,22 @@
 }
 .slide-x-leave-to {
   transform: translateX(-100%);
+}
+
+.slide-docent-move,
+.slide-docent-enter-active,
+.slide-docent-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-docent-enter-from,
+.slide-docent-leave-to {
+  transform: translateY(50%);
+}
+
+.slide-docent-leave-active {
+  position: absolute;
+  opacity: 0;
 }
 
 @keyframes ping-animation {
